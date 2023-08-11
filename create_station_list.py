@@ -6,5 +6,5 @@ station_json = requests.get('https://gbfs.lyft.com/gbfs/2.3/bkn/fr/station_infor
 station_list = station_json.get('data').get('stations')
 
 df = pd.DataFrame(station_list)
-df.to_csv('citibike_station_list.csv')
+df.to_csv('station_list.csv')
 
